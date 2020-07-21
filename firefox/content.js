@@ -108,7 +108,7 @@ app.insertTitle = function (id, title, newTitle) {
 }
 // Add a direct download link if is abstract page.
 app.addDownloadLink = function (id, type, title, newTitle) {
-  var fileName = `${title}, ${app.firstAuthor} et al., ${app.publishedYear}.pdf`;
+  var fileName = `${app.publishedYear} ${title}, ${app.firstAuthor}.pdf`;
   var elULs = document.querySelectorAll(".full-text > ul");
   if (elULs.length === 0) {
     console.log(app.name, "Error: Items selected by '.full-text > ul' not found");

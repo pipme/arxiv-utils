@@ -125,7 +125,7 @@ app.addDownloadLink = function (id, type, title, newTitle) {
   if (type === "PDF") {
     return;
   }
-  var fileName = `${title}, ${app.firstAuthor} et al., ${app.publishedYear}.pdf`;
+  var fileName = `${app.publishedYear} ${title}, ${app.firstAuthor}.pdf`;
   var elULs = document.querySelectorAll(".full-text > ul");
   if (elULs.length === 0) {
     console.log(app.name, "Error: Items selected by '.full-text > ul' not found");
